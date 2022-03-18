@@ -134,7 +134,7 @@ class FirstPersonCamera {
   updateCamera_(_) {
     this.camera_.quaternion.copy(this.rotation_);
     this.camera_.position.copy(this.translation_);
-    this.camera_.position.y += Math.sin(this.headBobTimer_ * 10) * 1.5;
+    this.camera_.position.y += Math.sin(this.headBobTimer_ * 15) * 0.13;
 
     const forward = new THREE.Vector3(0, 0, -1);
     forward.applyQuaternion(this.rotation_);
